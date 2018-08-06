@@ -1,8 +1,7 @@
 # Windows 10 Pro Kiosk Mode (For Desktop Applications)
-Windows 10 includes a kiosk mode to lock a user account to running one or multiple applications. This mode is available on
-Enterprise and Education editions of the operating system, but only partially available in the Pro edition; this edition allows
-for UWP (new Windows apps) kiosks to be made but lacks functionality for the older "desktop" (win32) applications to be used in
-a kiosk. Using Group Policy on the local machine and some small scripts, a kiosk-like experience can be created for desktop applications.
+Windows 10 includes a kiosk mode to lock a user account to running one or multiple applications. This mode is available on Enterprise and Education editions of the operating system, but only partially available in the Pro edition; this edition allows for UWP (new Windows apps) kiosks to be made but lacks functionality for the older "desktop" (win32) applications to be used in a kiosk. Using Group Policy on the local machine and some small scripts, a kiosk-like experience can be created for desktop applications.
+
+Windows 10 Pro contains the ability to lock the user to only specified applications. While this blocks desktop applications from running, it does nothing to block the user's ability to use UWP applications (Edge, Mail, Calendar, Store, etc.). However, these new applications are dependent on explorer.exe (the desktop, start menu, taskbar, etc.). Specifying a custom user interface as the application you wish to run has the bonus of also stopping explorer.exe from starting at the same time. The user is unable to start other applications as task manager is disabled.
 
 ## Create a new user
 
